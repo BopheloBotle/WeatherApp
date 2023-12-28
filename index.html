@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>weatherApptitle</title>
+  </head>
+  <body>
+    <div class="weatherApp">
+      <header>
+        <form id="search-form">
+          <input
+            class="searchInput"
+            type="search"
+            placeholder="Enter a city"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+
+      <main>
+        <div class="weather">
+          <h1 class="City" id="current-city">New York</h1>
+
+          <div class="temperature" id="current-temp">
+            <span class="icon"> 🌞</span>
+            <span class="temp" id="current-temperature">24</span>
+            <span class="degreeC"> &deg;C </span>
+          </div>
+        </div>
+        <p class="detials">
+          <span id="current-date">Saturday 15:32</span> , Moderate rain
+          <br />
+          Humidity
+          <strong> 87% </strong>
+          , Wind
+          <strong> 7.2 Km/h </strong>
+        </p>
+      </main>
+      <hr />
+      <footer>
+        <p class="footer-edit">
+          This project was coded by
+          <span><a href="https://www.instagram.com/"> Bophelo Seaga</a></span>
+          and is on
+          <span><a href="https://github.com/Bophelo-Botle">Github</a></span>
+          and is on
+          <span><a href="https://github.com/Bophelo-Botle">Netlify</a></span>
+        </p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

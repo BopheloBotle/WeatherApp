@@ -1,0 +1,101 @@
+body {
+  background-image: url(images/image1.jpg);
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+.weatherApp {
+  background: linear-gradient(
+    99.6deg,
+    rgb(112, 128, 152) 10.6%,
+    rgb(242, 227, 234) 32.9%,
+    rgb(234, 202, 213) 52.7%,
+    rgb(220, 227, 239) 72.8%,
+    rgb(185, 205, 227) 81.1%,
+    rgb(154, 180, 212) 102.4%
+  );
+  opacity: 80%;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+.searchInput {
+  background-color: #f9f7fe;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+  border-radius: 15px;
+}
+.search-button {
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #92b4e0;
+  color: white;
+  border: none;
+  padding: 20px;
+  line-height: 1;
+  border-radius: 15px;
+  font-weight: bold;
+}
+main {
+  padding: 30px 0;
+}
+.weather {
+  display: flex;
+  justify-content: space-between;
+}
+.City {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+}
+.detials {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+strong {
+  color: #f65282;
+}
+.temperature {
+  font-size: 48px;
+}
+.icon {
+  position: relative;
+  top: -8px;
+  font-size: 40px;
+  margin-right: 10px;
+}
+.temp {
+  font-size: 80px;
+  font-weight: bold;
+}
+.degreeC {
+  font-size: 28px;
+  position: relative;
+  top: -38px;
+}
+footer {
+  border-top: 1px solid #f9f7fe;
+  text-align: center;
+  padding-top: 15px;
+  color: rgba(39, 33, 66, 0.4);
+}
+.footer-edit {
+  text-align: center;
+  color: black;
+}
+a {
+  color: #885df1;
+}
+hr {
+  color: rgba(226, 86, 128, 0.664);
+}

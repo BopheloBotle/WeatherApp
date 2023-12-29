@@ -3,8 +3,10 @@ function displayTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#current-city");
   let descriptionElement = document.querySelector("#description");
+  let humididtyElement = document.querySelector("#humidity");
 
   descriptionElement.innerHTML = response.data.condition.description;
+  humididtyElement.innerHTML = "${response.data.temperature.humidity}%";
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
 }

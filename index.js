@@ -5,10 +5,11 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   let humididtyElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
+  let date = new Date(response.date.time * 10000);
 
   descriptionElement.innerHTML = response.data.condition.description;
   humididtyElement.innerHTML =
-    "Humidity " + response.data.temperature.humidity + " %";
+    "Humidity " + response.data.temperature.humidity + "%";
   windSpeedElement.innerHTML = "Wind " + response.data.wind.speed + " %";
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
@@ -59,4 +60,5 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
+
 search("Johannesburg");

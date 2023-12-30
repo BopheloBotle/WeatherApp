@@ -8,9 +8,8 @@ function displayTemperature(response) {
   let date = new Date(response.date.time * 10000);
 
   descriptionElement.innerHTML = response.data.condition.description;
-  humididtyElement.innerHTML =
-    "Humidity " + response.data.temperature.humidity + "%";
-  windSpeedElement.innerHTML = "Wind " + response.data.wind.speed + " %";
+  humididtyElement.innerHTML = response.data.condition.humidity + "%";
+  windSpeedElement.innerHTML = response.data.wind.speed + "%";
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
 }

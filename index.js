@@ -15,7 +15,7 @@ function displayTemperature(response) {
     "Humidity: " + response.data.temperature.humidity + "%";
   windSpeedElement.innerHTML =
     "Wind speed: " + response.data.wind.speed + "km/h";
-  temperatureElement.innerHTML = Math.round(temperature);
+ c/n temperatureElement.innerHTML = Math.round(temperature);
 }
 
 function search(event) {
